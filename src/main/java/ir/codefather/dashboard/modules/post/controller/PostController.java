@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+//todo data validation
+//todo set autorization after create user module
 @Controller
 @RequestMapping("/post")
 public class PostController {
