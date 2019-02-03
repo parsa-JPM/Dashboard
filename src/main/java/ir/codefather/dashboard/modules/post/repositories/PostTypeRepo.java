@@ -1,6 +1,5 @@
 package ir.codefather.dashboard.modules.post.repositories;
 
-import ir.codefather.dashboard.modules.post.model.Post;
 import ir.codefather.dashboard.modules.post.model.PostType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
