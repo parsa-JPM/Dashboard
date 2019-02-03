@@ -36,7 +36,6 @@ public class PostController {
     //todo method for delete post
 
     //todo get seperate code to small methods
-
     @PostMapping("/settype")
     @ResponseBody
     public Post setPostType(int postID, int postTypeID) {

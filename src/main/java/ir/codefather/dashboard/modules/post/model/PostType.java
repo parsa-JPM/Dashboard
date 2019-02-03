@@ -1,5 +1,7 @@
 package ir.codefather.dashboard.modules.post.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ public class PostType {
     private String description;
 
     @OneToMany(mappedBy = "postType")
+    @JsonManagedReference
     private List<Post> posts = new ArrayList<>();
 
     public int getId() {
@@ -37,5 +40,13 @@ public class PostType {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
     }
 }
