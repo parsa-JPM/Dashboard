@@ -15,8 +15,6 @@ import java.util.List;
 public class TestController {
 
     @Autowired
-    private PostRepo postRepo;
-    @Autowired
     private PostTypeRepo postTypeRepo;
 
     @RequestMapping("/test")
