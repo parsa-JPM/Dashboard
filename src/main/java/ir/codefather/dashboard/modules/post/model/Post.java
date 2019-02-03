@@ -1,5 +1,7 @@
 package ir.codefather.dashboard.modules.post.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,7 +15,9 @@ public class Post {
     private String content;
     private String locale;
 
+
     @ManyToOne
+    @JsonBackReference
     private PostType postType;
 
     public int getId() {
